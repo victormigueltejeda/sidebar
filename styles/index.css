@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: lightskyblue;
+  font-family: "Manrope", sans-serif;
+}
+
+.sidebar {
+  width: 25vh;
+  height: 100vh;
+  max-width: 250px;
+  background: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.header_sidebar {
+  display: flex;
+  block-size: 4rem;
+  align-items: center;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+}
+
+.sidebar_brant p {
+  white-space: nowrap;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sidebar_menu-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.list_sidebar {
+  list-style-type: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar_list-item {
+  padding-inline-start: 2rem;
+  padding-block-start: 1.2rem;
+  padding-block-end: 1.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar_list-ite {
+  padding-inline-start: 2rem;
+  padding-block-start: 1.2rem;
+  padding-block-end: 1.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar_list-ite:hover {
+  background: #c5dcfa;
+}
+
+.sidebar_link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+.sidebar_categoria-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.sidebar_list-item.is_active {
+  background: #c5dcfa;
+  color: #0f56b3;
+}
+
+/*active option */
+
+.active {
+  inline-size: 6rem;
+}
+
+.hide__element {
+  display: none;
+  user-select: none;
+}
+
+.icon_center {
+  display: flex;
+  justify-content: center;
+}
+
+.p-display {
+  display: none;
+}
