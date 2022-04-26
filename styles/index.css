@@ -29,13 +29,6 @@ body {
   padding-inline-end: 2rem;
 }
 
-.sidebar_brant p {
-  white-space: nowrap;
-  font-size: 1.6rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
-}
-
 .sidebar_menu-button {
   display: flex;
   background-color: transparent;
@@ -76,6 +69,8 @@ body {
   font-size: 1.6rem;
   text-decoration: none;
   padding-left: 1rem;
+  opacity: 1;
+  transition: opacity 0.4s linear;
 }
 .sidebar_categoria-text {
   font-size: 1.4rem;
@@ -94,8 +89,8 @@ body {
 }
 
 .hide__element {
-  display: none;
-  user-select: none;
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
 
 .icon_center {
@@ -103,6 +98,13 @@ body {
   justify-content: center;
 }
 
-.p-display {
+.title_hide,
+.img_hide {
+  display: inline;
   display: none;
+  transition: opacity 0.5s linear;
+}
+
+h4 {
+  font-size: 1.6rem;
 }
